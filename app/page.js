@@ -5,6 +5,7 @@ import CodeHeading from "@/components/CodeHeading";
 import Code from "@/components/Code";
 import CodeHeading2 from "@/components/CodeHeading2";
 import FullCode from "@/components/FullCode";
+import Footer from "@/components/Footer";
 import "./globals.css"
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Code />
       <CodeHeading2 />
       <FullCode />
+      <Footer />
     </>
   );
 }
