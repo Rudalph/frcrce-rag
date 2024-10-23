@@ -38,8 +38,8 @@ const FullCode = () => {
             <pre data-prefix="24"><code>system_prompt = (</code></pre>
             <pre data-prefix="25"><code>    &quot;You are an assistant for question-answering tasks. &quot;</code></pre>
             <pre data-prefix="26"><code>    &quot;Use the following pieces of retrieved context to answer &quot;</code></pre>
-            <pre data-prefix="27"><code>    &quot;the question. If you don't know the answer, say that you &quot;</code></pre>
-            <pre data-prefix="28"><code>    &quot;don't know. Use three sentences maximum and keep the &quot;</code></pre>
+            <pre data-prefix="27"><code>    &quot;the question. If you don&apos;t know the answer, say that you &quot;</code></pre>
+            <pre data-prefix="28"><code>    &quot;don&apos;t know. Use three sentences maximum and keep the &quot;</code></pre>
             <pre data-prefix="29"><code>    &quot;answer concise.&quot;</code></pre>
             <pre data-prefix="30"><code>    &quot;\n\n&quot;</code></pre>
             <pre data-prefix="31"><code>    &quot;&#123;&#123;context&#125;&#125;&quot;</code></pre> 

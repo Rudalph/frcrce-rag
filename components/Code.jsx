@@ -71,7 +71,7 @@ from langchain_core.prompts import ChatPromptTemplate`);
 
         <div>
           <p className="py-6 text-justify lg:w-[600px]">
-            This code snippet uses the PyPDFLoader to load a PDF file named "yolov9_paper.pdf".
+            This code snippet uses the PyPDFLoader to load a PDF file named &quot;yolov9_paper.pdf&quot;.
             The loader.load() function extracts the content of the PDF into the variable data,
             which can then be processed or displayed as needed. The commented line # print(data)
             suggests that you could print the loaded content to view it. This process is helpful
@@ -240,14 +240,14 @@ system_prompt = (
           <pre data-prefix="3"><code>system_prompt = (</code></pre>
           <pre data-prefix="4"><code>&quot;You are an assistant for question-answering tasks. &quot;</code></pre>
           <pre data-prefix="5"><code>&quot;Use the following pieces of retrieved context to answer &quot;</code></pre>
-          <pre data-prefix="6"><code>&quot;the question. If you don't know the answer, say that you &quot;</code></pre>
-          <pre data-prefix="7"><code>&quot;don't know. Use three sentences maximum and keep the &quot;</code></pre>
+          <pre data-prefix="6"><code>&quot;the question. If you don&apos;t know the answer, say that you &quot;</code></pre>
+          <pre data-prefix="7"><code>&quot;don&apos;t know. Use three sentences maximum and keep the &quot;</code></pre>
           <pre data-prefix="8"><code>&quot;answer concise.&quot;\n\n&quot;  &#123;context&#125;&quot;)</code></pre>
         </div>
 
         <div className='lg:w-[600px]'>
           <p className="py-6 text-justify">
-            This code snippet prompts the user for a question (user_query = input("Enter your question: "))
+            This code snippet prompts the user for a question (user_query = input(&quot;Enter your question:&quot;"))
             and sets a system_prompt which instructs the assistant on how to respond. The assistant is tasked
             with answering questions using retrieved context, keeping the response concise and within three
             sentences. If the answer is not known, the assistant will acknowledge that. The &#123;context&#125;
@@ -300,7 +300,7 @@ print(response["answer"])
               }, 3000);
             }}
           >
-            {copied2 ? (
+            {copied6 ? (
               <span className="text-white">Copied</span>
             ) : (
               <IoCopy className='text-white' size={20} />
