@@ -247,7 +247,7 @@ system_prompt = (
 
         <div className='lg:w-[600px]'>
           <p className="py-6 text-justify">
-            This code snippet prompts the user for a question (user_query = input(&quot;Enter your question:&quot;"))
+            This code snippet prompts the user for a question (user_query = input(&quot;Enter your question:&quot;&quot;))
             and sets a system_prompt which instructs the assistant on how to respond. The assistant is tasked
             with answering questions using retrieved context, keeping the response concise and within three
             sentences. If the answer is not known, the assistant will acknowledge that. The &#123;context&#125;
