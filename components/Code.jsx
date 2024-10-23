@@ -100,7 +100,7 @@ data = loader.load()
               <IoCopy className='text-white' size={20} />
             )}
           </button>
-          <pre data-prefix="1"><code>loader = PyPDFLoader("yolov9_paper.pdf")</code></pre>
+          <pre data-prefix="1"><code>loader = PyPDFLoader(&quot;yolov9_paper.pdf&quot;)</code></pre>
           <pre data-prefix="2"><code>data = loader.load()</code></pre>
           <pre data-prefix="3"><code># print(data)</code></pre>
         </div>
@@ -190,12 +190,12 @@ llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro",temperature=0,max_tokens=Non
               <IoCopy className='text-white' size={20} />
             )}
           </button>
-          <pre data-prefix="1"><code>GOOGLE_API_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</code></pre>
-          <pre data-prefix="2"><code>vectorstore = Chroma.from_documents(documents=docs, embedding=GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=GOOGLE_API_KEY))</code></pre>
+          <pre data-prefix="1"><code>GOOGLE_API_KEY = &quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;</code></pre>
+          <pre data-prefix="2"><code>vectorstore = Chroma.from_documents(documents=docs, embedding=GoogleGenerativeAIEmbeddings(model=&quot;models/embedding-001&quot;, google_api_key=GOOGLE_API_KEY))</code></pre>
           <pre data-prefix="3"><code># print(vectorstore)</code></pre>
-          <pre data-prefix="4"><code>retriever = vectorstore.as_retriever(search_type="similarity")</code></pre>
+          <pre data-prefix="4"><code>retriever = vectorstore.as_retriever(search_type=&quot;similarity&quot;)</code></pre>
           <pre data-prefix="5"><code># print(retriever)</code></pre>
-          <pre data-prefix="6"><code>llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro",temperature=0,max_tokens=None,timeout=None, google_api_key=GOOGLE_API_KEY)</code></pre>
+          <pre data-prefix="6"><code>llm = ChatGoogleGenerativeAI(model=&quot;gemini-1.5-pro&quot;,temperature=0,max_tokens=None,timeout=None, google_api_key=GOOGLE_API_KEY)</code></pre>
 
         </div>
 
@@ -235,14 +235,14 @@ system_prompt = (
               <IoCopy className='text-white' size={20} />
             )}
           </button>
-          <pre data-prefix="1"><code>user_query = input("Enter your question: ")</code></pre>
+          <pre data-prefix="1"><code>user_query = input(&quot;Enter your question: &quot;)</code></pre>
           <pre data-prefix="2"><code># print(user_query)</code></pre>
           <pre data-prefix="3"><code>system_prompt = (</code></pre>
-          <pre data-prefix="4"><code>"You are an assistant for question-answering tasks. "</code></pre>
-          <pre data-prefix="5"><code>"Use the following pieces of retrieved context to answer "</code></pre>
-          <pre data-prefix="6"><code>"the question. If you don't know the answer, say that you "</code></pre>
-          <pre data-prefix="7"><code>"don't know. Use three sentences maximum and keep the "</code></pre>
-          <pre data-prefix="8"><code>"answer concise."\n\n"  &#123;context&#125;")</code></pre>
+          <pre data-prefix="4"><code>&quot;You are an assistant for question-answering tasks. &quot;</code></pre>
+          <pre data-prefix="5"><code>&quot;Use the following pieces of retrieved context to answer &quot;</code></pre>
+          <pre data-prefix="6"><code>&quot;the question. If you don't know the answer, say that you &quot;</code></pre>
+          <pre data-prefix="7"><code>&quot;don't know. Use three sentences maximum and keep the &quot;</code></pre>
+          <pre data-prefix="8"><code>&quot;answer concise.&quot;\n\n&quot;  &#123;context&#125;&quot;)</code></pre>
         </div>
 
         <div className='lg:w-[600px]'>
@@ -268,7 +268,7 @@ system_prompt = (
 
         <div>
           <p className="py-6 text-justify lg:w-[600px]">
-            This code snippet uses the PyPDFLoader to load a PDF file named "yolov9_paper.pdf".
+            This code snippet uses the PyPDFLoader to load a PDF file named &quot;yolov9_paper.pdf&quot;.
             The loader.load() function extracts the content of the PDF into the variable data,
             which can then be processed or displayed as needed. The commented line # print(data)
             suggests that you could print the loaded content to view it. This process is helpful
@@ -308,8 +308,8 @@ print(response["answer"])
           </button>
           <pre data-prefix="1"><code>prompt = ChatPromptTemplate.from_messages(</code></pre>
 <pre data-prefix="2"><code>    [</code></pre>
-<pre data-prefix="3"><code>        ("system", system_prompt),</code></pre>
-<pre data-prefix="4"><code>        ("human", "&#123;input&#125;"),</code></pre>
+<pre data-prefix="3"><code>        (&quot;system&quot;, system_prompt),</code></pre>
+<pre data-prefix="4"><code>        (&quot;human&quot;, &quot;&#123;input&#125;&quot;),</code></pre>
 <pre data-prefix="5"><code>    ]</code></pre>
 <pre data-prefix="6"><code>)</code></pre>
 
@@ -317,8 +317,8 @@ print(response["answer"])
 <pre data-prefix="8"><code>    question_answer_chain = create_stuff_documents_chain(llm, prompt)</code></pre>
 <pre data-prefix="9"><code>    rag_chain = create_retrieval_chain(retriever, question_answer_chain)</code></pre>
 
-<pre data-prefix="10"><code>    response = rag_chain.invoke(&#123;"input": user_query&#125;)</code></pre>
-<pre data-prefix="11"><code>    print(response["answer"])</code></pre>
+<pre data-prefix="10"><code>    response = rag_chain.invoke(&#123;&quot;input&quot;: user_query&#125;)</code></pre>
+<pre data-prefix="11"><code>    print(response[&quot;answer&quot;])</code></pre>
 
         </div>
 
