@@ -16,16 +16,31 @@ const Footer = () => {
                 </div>
                 <div className='flex justify-between align-middle w-full flex-wrap lg:gap-0 gap-5'>
                     <div>Rudalph Gonsalves (BE Computers A, 2025)
-                        <div className='lg:flex justify-evenly align-middle items-center pt-5 hidden'>
+                        {/* <div className='lg:flex justify-evenly align-middle items-center pt-5 hidden'>
                             <a href="https://www.linkedin.com/in/rudalphgonsalves"><ImLinkedin size={20}/></a>
                             <a href="https://github.com/Rudalph"><FaGithub size={20}/></a>
-                        </div>
+                        </div> */}
                     </div>
                     <div>Zane Falcao (BE Computers A, 2025)
-                        <div className='lg:flex justify-evenly align-middle items-center pt-5 hidden'>
+                        {/* <div className='lg:flex justify-evenly align-middle items-center pt-5 hidden'>
                             <a href="https://www.linkedin.com/in/zane-falcao-014a41247/"><ImLinkedin size={20}/></a>
                             <a href="https://github.com/falcaozane"><FaGithub size={20}/></a>
-                        </div>
+                        </div> */}
+                    </div>
+                </div>
+<br />
+                <div className='flex justify-between align-middle w-full flex-wrap lg:gap-0 gap-5'>
+                    <div>Jonathan Dabre (BE Computers A, 2025)
+                        {/* <div className='lg:flex justify-evenly align-middle items-center pt-5 hidden'>
+                            <a href="https://www.linkedin.com/in/rudalphgonsalves"><ImLinkedin size={20}/></a>
+                            <a href="https://github.com/Rudalph"><FaGithub size={20}/></a>
+                        </div> */}
+                    </div>
+                    <div>Alroy Pereira (BE Computers A, 2025)
+                        {/* <div className='lg:flex justify-evenly align-middle items-center pt-5 hidden'>
+                            <a href="https://www.linkedin.com/in/zane-falcao-014a41247/"><ImLinkedin size={20}/></a>
+                            <a href="https://github.com/falcaozane"><FaGithub size={20}/></a>
+                        </div> */}
                     </div>
                 </div>
             </footer>
