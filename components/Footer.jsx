@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
                 <br />
                 <div className='flex justify-center align-middle items-center'>
-                    <b>Design and Debeloped by</b>
+                    <b>Design and Developed by</b>
                 </div>
                 <div className='flex justify-between align-middle w-full flex-wrap lg:gap-0 gap-5'>
                     <div>Rudalph Gonsalves (BE Computers A, 2025)
